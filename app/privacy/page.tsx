@@ -13,7 +13,7 @@ export default function Privacy() {
     <>
       <section
         className="relative bg-cover bg-center bg-no-repeat min-h-[200px]"
-        style={{ backgroundImage: "url('/hero-bg.jpg')" }}
+        style={{ backgroundImage: "url('/herobguc.webp')" }}
       >
         <div className="absolute inset-0 bg-blue-900/65" />
         <div className="relative z-10 pb-8">

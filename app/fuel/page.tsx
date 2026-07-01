@@ -63,7 +63,7 @@ export default function FuelPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema).replace(/</g, '\\u003c') }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppSchema).replace(/</g, '\\u003c') }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema).replace(/</g, '\\u003c') }} />
-      <section className="relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/hero-bg.jpg')" }}>
+      <section className="relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/herobguc.webp')" }}>
         <div className="absolute inset-0 bg-blue-900/65" />
         <div className="relative z-10 pb-10">
           <ToolHeader />
@@ -82,7 +82,6 @@ export default function FuelPage() {
       </section>
       <section className="bg-white dark:bg-[#0f172a] pt-6">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <div className="pb-4"><AdBanner slot="2222222222" /></div>
           <div className="pb-10"><FAQ questions={faqs} /></div>
           <div className="pb-6"><AdBanner slot="3333333333" /></div>
         </div>

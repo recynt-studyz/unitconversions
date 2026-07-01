@@ -48,7 +48,7 @@ export default function FeetToMetersPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema).replace(/</g, '\\u003c') }} />
-      <section className="relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/hero-bg.jpg')" }}>
+      <section className="relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/herobguc.webp')" }}>
         <div className="absolute inset-0 bg-blue-900/65" />
         <div className="relative z-10 pb-10">
           <ToolHeader />

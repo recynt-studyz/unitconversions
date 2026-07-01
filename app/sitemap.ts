@@ -42,7 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/kph-to-mph`,             lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
 
     // Static pages
-    { url: `${BASE}/about`,   lastModified: new Date(), changeFrequency: 'monthly', priority: 0.3 },
-    { url: `${BASE}/privacy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.3 },
+    { url: `${BASE}/about`,   lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${BASE}/privacy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
   ]
 }
