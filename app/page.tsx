@@ -104,7 +104,7 @@ export default function Home() {
         className="relative bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/herobguc.webp')" }}
       >
-        <div className="absolute inset-0 bg-blue-900/65" />
+        <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 pb-10">
           <ToolHeader />
           <div className="text-center text-white px-4 py-8">
