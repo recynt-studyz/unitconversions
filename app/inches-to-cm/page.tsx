@@ -120,6 +120,55 @@ export default function InchesToCmPage() {
             </div>
           </div>
 
+          {/* Formula Explained */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Why the Formula Works</h2>
+            <div className="space-y-3 text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+              <p>The formula cm = inches × 2.54 comes from an international agreement signed in 1959. The United States, United Kingdom, Canada, Australia, New Zealand, and South Africa agreed to define the international inch as exactly 25.4 millimeters (2.54 centimeters). Before this agreement, the inch was defined slightly differently in each country — the US inch was 25.4000508 mm and the UK inch was 25.399977 mm. The tiny discrepancy caused measurable problems in engineering and manufacturing where parts made on different continents needed to fit together.</p>
+              <p>The 2.54 definition was chosen to minimize disruption while creating a single global standard. This definition makes the conversion exact — there is no approximation involved. 2.54 is not a rounded value; it is the precise, legally defined relationship between inches and centimeters worldwide.</p>
+            </div>
+          </div>
+
+          {/* Worked Examples */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Real-World Examples</h2>
+            <div className="space-y-3 text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+              <p><strong className="text-gray-800 dark:text-gray-200">Television screens:</strong> Screen sizes are always listed in diagonal inches, even in metric countries. A 55-inch TV has a diagonal of 55 × 2.54 = 139.7 cm. A 65-inch model measures 165.1 cm diagonally. European buyers shopping US-sourced TVs need this conversion to check if a TV will fit in their space.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">Height conversions:</strong> To convert 5 feet 10 inches to centimeters: first convert to total inches (5 × 12 + 10 = 70 inches), then multiply by 2.54 to get 177.8 cm. Medical forms, immigration documents, and online profiles may require height in either unit depending on country.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">Clothing and apparel:</strong> Pants inseams in the US are listed in inches; European sizes use centimeters. A 32-inch inseam = 81.3 cm; a 34-inch inseam = 86.4 cm. Shoe widths in the US are measured in inches; European lasts use millimeters.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">Furniture dimensions:</strong> A 60-inch wide sofa measures 152.4 cm. A standard US queen mattress is 60 × 80 inches (152.4 × 203.2 cm). When buying furniture from international retailers or checking whether imported pieces fit, these conversions are essential.</p>
+            </div>
+          </div>
+
+          {/* Common Heights Quick Reference */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Height Quick Reference</h2>
+            <div className="overflow-hidden rounded-xl border border-gray-100 dark:border-gray-700">
+              <table className="w-full text-sm">
+                <thead><tr className="bg-gray-50 dark:bg-[#1e293b]">
+                  <th className="px-4 py-2.5 text-left font-semibold text-gray-600 dark:text-gray-300">Height (ft/in)</th>
+                  <th className="px-4 py-2.5 text-center font-semibold text-gray-600 dark:text-gray-300">Total Inches</th>
+                  <th className="px-4 py-2.5 text-right font-semibold text-gray-600 dark:text-gray-300">Centimeters</th>
+                </tr></thead>
+                <tbody>
+                  {[["5′0″",60,152.4],["5′4″",64,162.6],["5′6″",66,167.6],["5′8″",68,172.7],["5′10″",70,177.8],["6′0″",72,182.9],["6′2″",74,187.9],["6′4″",76,193.0]].map(([ft,i,cm],idx) => (
+                    <tr key={String(i)} className={`border-t border-gray-50 dark:border-gray-800 ${idx % 2 === 0 ? 'bg-white dark:bg-[#0f172a]' : 'bg-gray-50/50 dark:bg-[#1e293b]/50'}`}>
+                      <td className="px-4 py-2.5 text-gray-700 dark:text-gray-300">{ft}</td>
+                      <td className="px-4 py-2.5 text-center text-gray-500 dark:text-gray-400">{i} in</td>
+                      <td className="px-4 py-2.5 text-right font-mono text-gray-800 dark:text-gray-200">{cm} cm</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Why This Conversion Matters */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Why This Conversion Matters</h2>
+            <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">The inches-to-centimeters conversion is one of the most frequently needed in daily life precisely because the United States uses inches for so many consumer products while the rest of the world uses centimeters. Screen sizes — phones, tablets, monitors, televisions — are universally quoted in inches by manufacturers worldwide, even for products sold exclusively in metric countries. Clothing sizes from US retailers use inches for waist, chest, and inseam measurements. If you buy furniture, tools, plumbing fixtures, or hardware from US or UK websites, dimensions will almost always be in inches. International travelers converting their height for visa applications, passport renewals, or medical forms frequently need this exact conversion. Architects, designers, and engineers working across borders must convert imperial plans to metric building codes and vice versa on a daily basis.</p>
+          </div>
+
           <div className="pb-10"><FAQ questions={faqs} /></div>
 
           <div className="pb-4 text-sm text-gray-500 dark:text-gray-400">

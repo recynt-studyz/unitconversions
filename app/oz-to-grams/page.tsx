@@ -91,6 +91,32 @@ export default function OzToGramsPage() {
               </table>
             </div>
           </div>
+          {/* Formula Explained */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Why the Formula Works</h2>
+            <div className="space-y-3 text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+              <p>The formula grams = oz × 28.3495 is based on the internationally defined avoirdupois ounce: exactly 28.349523125 grams. This definition comes from the 1959 international yard and pound agreement, which fixed 1 pound = exactly 453.59237 grams. Since there are 16 ounces in a pound, 1 oz = 453.59237 ÷ 16 = 28.349523125 grams exactly. The rounded value 28.3495 introduces an error of less than 0.000009 grams per ounce — completely negligible for any use.</p>
+              <p>Important: the troy ounce (used for gold, silver, and other precious metals) is different from the avoirdupois ounce. 1 troy oz = 31.1035 grams, not 28.35 grams. If you are buying or selling gold, silver, or gemstones, always use the troy ounce conversion. This converter uses the avoirdupois ounce for everyday weight measurement.</p>
+            </div>
+          </div>
+
+          {/* Worked Examples */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Real-World Examples</h2>
+            <div className="space-y-3 text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+              <p><strong className="text-gray-800 dark:text-gray-200">Cooking and baking:</strong> US recipes often list ingredients in ounces: 8 oz of chocolate = 226.8 g. 4 oz of butter = 113.4 g (1 stick of US butter = 4 oz = 113.4 g). A can of tuna at 5 oz = 141.8 g. European baking recipes list in grams; converting helps American cooks use a kitchen scale.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">Specialty coffee:</strong> Precision coffee recipes use grams. A standard espresso double shot uses 18–20 g (0.63–0.71 oz) of ground coffee. A pour-over recipe might call for 30 g (1.06 oz) of coffee for 500 g (17.6 oz) of water. Baristas frequently need both units for consistent brewing.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">Nutrition tracking:</strong> US food labels list serving sizes in ounces and grams. A 1 oz serving of almonds = 28.35 g (about 23 almonds). A 1.5 oz serving of cheese = 42.5 g. Protein bars are often 1.76 oz (50 g) or 2.12 oz (60 g). Both units appear on the same label.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">Postal and shipping:</strong> USPS uses ounces for first-class mail under 1 pound. A 2 oz letter = 56.7 g. International postal services use grams. Packages shipped internationally may require weight in grams on customs forms even when measured in ounces domestically.</p>
+            </div>
+          </div>
+
+          {/* Why This Conversion Matters */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Why This Conversion Matters</h2>
+            <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Ounces to grams is critical for cooking, baking, nutrition tracking, and international commerce. American recipes use ounces for ingredients that European and Australian recipes measure in grams — anyone cooking across these traditions needs constant conversion. Kitchen scales sold globally may display in either unit; knowing the equivalent helps when a recipe&apos;s unit doesn&apos;t match the scale&apos;s current mode. US nutrition labels list serving sizes in ounces; international nutritional databases and fitness apps (especially European ones) use grams. Online food order platforms from different countries show weights differently. Postal and courier services worldwide calculate weight-based shipping costs in grams, while US domestic shipping uses ounces. Jewelry, spices, precious metals, and specialty ingredients are priced per gram internationally and per ounce domestically, requiring conversion for price comparison.</p>
+          </div>
+
           <div className="pb-10"><FAQ questions={faqs} /></div>
           <div className="pb-4 text-sm text-gray-500 dark:text-gray-400">
             <p>For more weight conversions, see the full <a href="/weight" className="text-[#2563EB] hover:underline">Weight Converter</a>.</p>

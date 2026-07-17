@@ -91,6 +91,52 @@ export default function MphToKphPage() {
               </table>
             </div>
           </div>
+          {/* Formula Explained */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Why the Formula Works</h2>
+            <div className="space-y-3 text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+              <p>The formula km/h = mph × 1.60934 is based on the definition of the international mile as exactly 1,609.344 meters. Speed is distance per time, so converting miles per hour to kilometers per hour only requires converting the distance unit — the &quot;per hour&quot; stays the same. Since 1 mile = 1.609344 km, the conversion factor is exactly 1.609344. The rounded value 1.60934 is accurate to 6 significant figures. A quick mental estimate: multiply by 1.6 (off by 0.58%). The fraction 8/5 = 1.6 exactly, making &quot;multiply by 8 and divide by 5&quot; a convenient mental shortcut.</p>
+            </div>
+          </div>
+
+          {/* Worked Examples */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Real-World Examples</h2>
+            <div className="space-y-3 text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+              <p><strong className="text-gray-800 dark:text-gray-200">International driving:</strong> Common US speed limits: 25 mph (residential) = 40.2 km/h. 55 mph (rural) = 88.5 km/h. 65 mph (interstate) = 104.6 km/h. 75 mph (some western interstates) = 120.7 km/h. When driving in Canada or crossing into Mexico, these familiar mph speeds must be expressed in km/h to match road signs.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">Motorsports:</strong> NASCAR superspeedway average speeds reach about 200 mph = 321.9 km/h. Formula 1 top speed on a straight is around 360 km/h = 223.7 mph. MotoGP bikes reach 350 km/h = 217.5 mph. Cross-series comparisons require converting between the unit systems used in each series&apos; broadcast.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">Wind and weather:</strong> Hurricane wind speeds in the US are reported in mph. Category 1 begins at 74 mph = 119.1 km/h. Category 3 (major hurricane) starts at 111 mph = 178.6 km/h. Category 5 exceeds 157 mph = 252.7 km/h. International weather agencies report these in km/h.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">Athletic performance:</strong> Usain Bolt&apos;s 2009 100m world record of 9.58 seconds corresponds to a peak instantaneous speed of about 27.8 mph = 44.7 km/h. World marathon record pace (2:00:35 in 2023) = about 13.1 mph = 21.1 km/h average.</p>
+            </div>
+          </div>
+
+          {/* Speed Quick Reference */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Speed Limits Quick Reference</h2>
+            <div className="overflow-hidden rounded-xl border border-gray-100 dark:border-gray-700">
+              <table className="w-full text-sm">
+                <thead><tr className="bg-gray-50 dark:bg-[#1e293b]">
+                  <th className="px-4 py-2.5 text-left font-semibold text-gray-600 dark:text-gray-300">MPH</th>
+                  <th className="px-4 py-2.5 text-right font-semibold text-gray-600 dark:text-gray-300">KM/H</th>
+                </tr></thead>
+                <tbody>
+                  {[[15,24.1],[25,40.2],[35,56.3],[45,72.4],[55,88.5],[60,96.6],[65,104.6],[70,112.7],[75,120.7],[80,128.7],[100,160.9]].map(([mph,kph],idx) => (
+                    <tr key={mph} className={`border-t border-gray-50 dark:border-gray-800 ${idx % 2 === 0 ? 'bg-white dark:bg-[#0f172a]' : 'bg-gray-50/50 dark:bg-[#1e293b]/50'}`}>
+                      <td className="px-4 py-2.5 text-gray-700 dark:text-gray-300">{mph} mph</td>
+                      <td className="px-4 py-2.5 text-right font-mono text-gray-800 dark:text-gray-200">{kph} km/h</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Why This Conversion Matters */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Why This Conversion Matters</h2>
+            <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">MPH to KPH conversion is needed every time an American drives in a metric country or reads international vehicle specifications. Speed limits throughout Canada, Mexico, Europe, Australia, and virtually every country outside the US are in km/h; misreading a speed sign as mph instead of km/h can result in driving 60% too fast. Vehicle speedometers in metric countries display km/h, so US visitors renting cars must recalibrate their speed intuition immediately. Car performance specs from European, Japanese, and Korean manufacturers (top speed, 0–100 acceleration) are in km/h; comparing to American muscle cars requires conversion. International weather service hurricane and cyclone wind speed advisories use km/h; US media needs to convert for their audience. Formula 1, MotoGP, and international cycling coverage use km/h throughout.</p>
+          </div>
+
           <div className="pb-10"><FAQ questions={faqs} /></div>
           <div className="pb-4 text-sm text-gray-500 dark:text-gray-400">
             <p>For more speed conversions, see the full <a href="/speed" className="text-[#2563EB] hover:underline">Speed Converter</a>.</p>

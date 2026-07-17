@@ -91,6 +91,31 @@ export default function LitersToGallonsPage() {
               </table>
             </div>
           </div>
+          {/* Formula Explained */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Why the Formula Works</h2>
+            <div className="space-y-3 text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+              <p>The formula US gallons = liters ÷ 3.78541 is the inverse of the gallons-to-liters definition. Since 1 US gallon = 3.785411784 liters exactly, 1 liter = 1/3.785411784 = 0.264172052... US gallons. The approximation 0.264172 is accurate to 6 significant figures. A quick mental estimate: 1 liter ≈ 0.26 gallons (about a quarter of a gallon). 4 liters ≈ 1.057 gallons — slightly more than 1 gallon. To convert to Imperial (UK) gallons instead, divide by 4.54609.</p>
+            </div>
+          </div>
+
+          {/* Worked Examples */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Real-World Examples</h2>
+            <div className="space-y-3 text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+              <p><strong className="text-gray-800 dark:text-gray-200">Bottled water and beverages:</strong> A standard 2-liter soda bottle = 0.528 gallons (slightly more than half a gallon). A 500 mL bottle = 0.132 gallons. A 1.5-liter water bottle = 0.396 gallons. US grocery stores sell juice in 64 oz (half gallon = 1.89 L) and 128 oz (gallon = 3.785 L) containers — knowing the liter equivalent helps when comparing imported products.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">European car fuel tanks:</strong> A European compact car with a 45-liter tank has 11.9 gallons of capacity. A midsize SUV with an 80-liter tank holds 21.1 gallons. American buyers considering European-market vehicles need these conversions for fuel planning, range estimation, and cost comparison.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">Cooking and recipes:</strong> A recipe calling for 2 liters of chicken stock = 0.528 gallons = 2.11 US quarts = 8.45 cups. Large batch cooking (soups, stews, fermentation) often encounters liter quantities that must be converted to US liquid measures for standard kitchen equipment.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">Water usage and efficiency:</strong> A 10-minute shower uses about 60–80 liters (15.9–21.1 gallons). A standard bath uses about 150 liters (39.6 gallons). European water appliance efficiency ratings cite liters per cycle; US appliances cite gallons. Comparing dishwashers or washing machines across markets requires this conversion.</p>
+            </div>
+          </div>
+
+          {/* Why This Conversion Matters */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Why This Conversion Matters</h2>
+            <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Liters to gallons conversion is needed whenever metric liquid volumes must be understood in US terms. The global standard for liquid measurement is liters — fuel, beverages, industrial chemicals, pharmaceutical liquids, and cooking quantities outside the US are all measured in liters. American consumers importing products, travelers bringing liquids from metric countries, and engineers specifying liquid systems from international sources all need to convert liters to gallons for comparison with US standards. International appliance efficiency ratings, water heater capacities, swimming pool volumes, and industrial tank sizes are in liters; US buyers selecting and installing these need gallon equivalents. Vineyards, breweries, and distilleries following international production standards report volumes in liters; distributors serving the US market must convert. Gardeners and farmers using internationally sourced fertilizer or pesticide recommendations may encounter liter-based dosing rates.</p>
+          </div>
+
           <div className="pb-10"><FAQ questions={faqs} /></div>
           <div className="pb-4 text-sm text-gray-500 dark:text-gray-400">
             <p>For more volume conversions, see the full <a href="/volume" className="text-[#2563EB] hover:underline">Volume Converter</a>.</p>

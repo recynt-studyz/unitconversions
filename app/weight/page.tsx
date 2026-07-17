@@ -83,6 +83,28 @@ export default function WeightPage() {
       </section>
       <section className="bg-white dark:bg-[#0f172a] pt-6">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          {/* How It Works */}
+          <div className="mb-10">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">How Weight Conversion Works</h2>
+            <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
+              <p>Weight and mass are technically different: mass measures the amount of matter in an object, while weight measures the gravitational force acting on that mass. On Earth&apos;s surface they are functionally equivalent, but an astronaut who weighs 80 kg on Earth would weigh about 13 kg on the Moon — while their mass stays the same. In everyday language, we use &quot;weight&quot; to mean both.</p>
+              <p>The metric system uses grams and kilograms. One kilogram was originally defined as the mass of one liter of water at 4°C. Since 2019 it has been redefined in terms of Planck&apos;s constant, a fundamental physical quantity, making it independent of any physical artifact. Most of the world uses kilograms for body weight, grocery shopping, and commercial goods.</p>
+              <p>The United States uses pounds and ounces, inherited from the British imperial system. The UK officially uses kilograms in commerce but many British people still think in &quot;stone&quot; for body weight — a unit of 14 pounds used almost nowhere else in the world. For international shipping, aviation cargo, and global trade, kilograms are the universal standard.</p>
+              <p>Weight conversions are essential for international travel (airline baggage limits are often in both kg and lbs), cooking foreign recipes (European recipes use grams, American recipes use cups and ounces), medication dosing which is always in milligrams and grams regardless of country, and online shopping from international retailers whose sizing charts may reference weight in unfamiliar units.</p>
+            </div>
+          </div>
+
+          {/* Key Facts */}
+          <div className="rounded-2xl bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-gray-700 px-6 py-5 mb-10">
+            <h2 className="text-lg font-bold text-gray-900 dark:text-white mb-3">Key Facts About Weight</h2>
+            <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+              <li><strong className="text-gray-800 dark:text-gray-200">Three different tons:</strong> A metric ton (tonne) is exactly 1,000 kg (about 2,205 lbs). A US short ton is 2,000 lbs (≈907 kg). A UK long ton is 2,240 lbs (≈1,016 kg). Specifying which ton is meant is critical in international shipping and commodities trading.</li>
+              <li><strong className="text-gray-800 dark:text-gray-200">The carat:</strong> The carat used for gemstones is a unit of weight equal to exactly 0.2 grams (200 milligrams). A 1-carat diamond weighs one-fifth of a gram. Do not confuse this with karat (k), which measures gold purity.</li>
+              <li><strong className="text-gray-800 dark:text-gray-200">The pound&apos;s origin:</strong> The avoirdupois pound was historically defined as 7,000 grains (the weight of a grain of barley). Today, 1 pound is exactly 0.45359237 kilograms by international agreement since 1959.</li>
+              <li><strong className="text-gray-800 dark:text-gray-200">The human brain:</strong> The average human brain weighs approximately 1.4 kg (about 3 lbs), accounting for 2% of body weight while consuming roughly 20% of the body&apos;s total energy.</li>
+            </ul>
+          </div>
+
           <div className="pb-10"><FAQ questions={faqs} /></div>
           <div className="pb-6"><AdBanner slot="3333333333" /></div>
         </div>

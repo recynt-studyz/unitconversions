@@ -91,6 +91,31 @@ export default function GramsToOzPage() {
               </table>
             </div>
           </div>
+          {/* Formula Explained */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Why the Formula Works</h2>
+            <div className="space-y-3 text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+              <p>The formula oz = grams ÷ 28.3495 is the inverse of the ounce-to-gram definition. Since 1 oz = 28.349523125 grams exactly, 1 gram = 1/28.349523125 oz = 0.035273961... oz. The common shorthand 0.035274 oz per gram is accurate to 6 significant figures. A practical mental shortcut: 100 grams ≈ 3.53 oz. This makes estimating common package sizes easy — 200 g ≈ 7 oz, 500 g ≈ 17.6 oz (just over 1 lb), 1,000 g = 1 kg ≈ 35.3 oz (2.2 lbs).</p>
+            </div>
+          </div>
+
+          {/* Worked Examples */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Real-World Examples</h2>
+            <div className="space-y-3 text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+              <p><strong className="text-gray-800 dark:text-gray-200">European grocery shopping:</strong> Imported cheese, deli meat, and specialty foods are often sold in grams at European-style markets. A 200 g wedge of Parmesan = 7.05 oz. A 300 g package of smoked salmon = 10.58 oz. Comparing prices per gram to prices per ounce requires this conversion.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">Protein and nutrition tracking:</strong> International nutrition databases list food composition per 100 grams. 100 g of chicken breast contains about 31 g protein = 3.53 oz of food. Converting portion sizes from grams (as shown on international labels) to ounces (as used in US food logging apps) is a daily need for fitness-conscious users.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">Chocolate and confectionery:</strong> European and premium chocolate bars come in 100 g (3.53 oz) and 200 g (7.05 oz) sizes. Cocoa powder for baking is often sold in 250 g (8.82 oz) or 500 g (17.64 oz) packages. US bakers adapting European recipes need gram-to-ounce conversions for shopping.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">Postal small packages:</strong> Many international postal services charge by weight in grams. A small package of 500 g = 17.64 oz = 1.10 lbs. Understanding both helps when choosing between domestic (ounces/lbs) and international (grams/kg) shipping services for the most cost-effective option.</p>
+            </div>
+          </div>
+
+          {/* Why This Conversion Matters */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Why This Conversion Matters</h2>
+            <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Grams to ounces is needed whenever European or international measurements must be understood in US terms. European food products, including dairy, meat, bread, and packaged goods, list weight exclusively in grams; American consumers comparing prices or portioning these products need ounce equivalents. Fitness and nutrition tracking apps from different countries display food portions in different units — a European app may show 150 g of yogurt while a US app expects ounces. Recipes from the UK, Germany, France, and Australia list ingredient quantities in grams; US cooks measuring with US measuring cups and ounce-marked scales need this conversion. International shipping forms from US postal services sometimes accept grams for small packages going abroad; understanding the gram weight of a package originally measured in ounces prevents form errors.</p>
+          </div>
+
           <div className="pb-10"><FAQ questions={faqs} /></div>
           <div className="pb-4 text-sm text-gray-500 dark:text-gray-400">
             <p>For more weight conversions, see the full <a href="/weight" className="text-[#2563EB] hover:underline">Weight Converter</a>.</p>

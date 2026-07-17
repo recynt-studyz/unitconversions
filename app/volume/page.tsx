@@ -82,6 +82,28 @@ export default function VolumePage() {
       </section>
       <section className="bg-white dark:bg-[#0f172a] pt-6">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          {/* How It Works */}
+          <div className="mb-10">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">How Volume Conversion Works</h2>
+            <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
+              <p>Volume measures three-dimensional space — the amount of space a substance occupies. Liquid volume and dry volume are sometimes measured differently, especially in cooking. The US uses customary units (gallons, quarts, pints, cups, fluid ounces, tablespoons, teaspoons) for both cooking and everyday liquid measurement. Most of the world uses liters and milliliters.</p>
+              <p>The liter is the primary metric unit of volume and equals exactly 1,000 cubic centimeters (one cubic decimeter). One milliliter equals exactly 1 cubic centimeter. A US gallon is 3.785 liters; a UK imperial gallon is 4.546 liters — about 20% larger. This difference matters in practice: a UK car that achieves &quot;30 mpg&quot; is actually getting better fuel economy than a US car also rated at 30 mpg, because the UK gallon is bigger.</p>
+              <p>In cooking, volume measurements are standard in American recipes — cups, tablespoons, and teaspoons — while European and professional recipes use weight (grams) because it is more precise and consistent. A cup of flour can weigh anywhere from 120 to 150 grams depending on how it is scooped, sifted, or settled, which is why weight-based baking yields more reliable results.</p>
+              <p>Volume conversions arise when buying beverages abroad (500 mL vs. 16 oz), filling a car with gas in a liter-based country, following a metric recipe, calculating medication dosages in mL or fluid ounces, sizing an aquarium, or buying paint for a home project where containers are labeled in different unit systems.</p>
+            </div>
+          </div>
+
+          {/* Key Facts */}
+          <div className="rounded-2xl bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-gray-700 px-6 py-5 mb-10">
+            <h2 className="text-lg font-bold text-gray-900 dark:text-white mb-3">Key Facts About Volume</h2>
+            <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+              <li><strong className="text-gray-800 dark:text-gray-200">Two different fluid ounces:</strong> The US fluid ounce is 29.574 mL. The UK fluid ounce is 28.413 mL — about 4% smaller. Always verify which is meant when following a recipe from the other country, especially for cocktails and beverages.</li>
+              <li><strong className="text-gray-800 dark:text-gray-200">A cubic foot of liquid:</strong> One cubic foot equals approximately 7.48 US gallons or 28.32 liters — a useful conversion when calculating aquarium volumes, concrete mixing water, or tank capacity.</li>
+              <li><strong className="text-gray-800 dark:text-gray-200">The human stomach:</strong> The stomach holds about 1 liter when empty and can expand to roughly 4 liters (approximately 1 US gallon) after a very large meal — giving a tangible reference for these abstract volumes.</li>
+              <li><strong className="text-gray-800 dark:text-gray-200">Wine bottle standard:</strong> A standard 750 mL wine bottle is exactly 0.75 liters, equivalent to about 25.4 US fluid ounces or approximately five standard 5-oz pours.</li>
+            </ul>
+          </div>
+
           <div className="pb-10"><FAQ questions={faqs} /></div>
           <div className="pb-6"><AdBanner slot="3333333333" /></div>
         </div>

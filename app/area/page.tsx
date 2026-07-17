@@ -82,6 +82,28 @@ export default function AreaPage() {
       </section>
       <section className="bg-white dark:bg-[#0f172a] pt-6">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          {/* How It Works */}
+          <div className="mb-10">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">How Area Conversion Works</h2>
+            <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
+              <p>Area measures two-dimensional space — the amount of surface a shape covers. Area units are the squares of linear units: a square meter is the area of a 1-meter × 1-meter square, and a square foot is a 1-foot × 1-foot square. This is why area conversions involve squaring the linear conversion factor: there are 10.764 square feet in a square meter because 1 meter = 3.281 feet, and 3.281² ≈ 10.764.</p>
+              <p>In the United States, real estate and land area are measured in square feet (for buildings and homes) and acres (for land). One acre equals exactly 43,560 square feet, roughly the size of an American football field without end zones. In most other countries, floor area is listed in square meters and land in hectares (1 hectare = 10,000 square meters = 2.471 acres).</p>
+              <p>For geographic and scientific applications, square kilometers and hectares are the metric standards worldwide. Countries report agricultural land, national parks, and urban districts in hectares or square kilometers. The United States uses square miles for geographic areas (1 square mile = 640 acres = 258.999 hectares) and acres for farmland and real estate parcels.</p>
+              <p>Area conversions are essential when buying property abroad, interpreting apartment listings from foreign countries (square meters vs. square feet), reading architectural plans from different systems, understanding land-use data from international sources, or comparing city or country sizes across different geographic databases.</p>
+            </div>
+          </div>
+
+          {/* Key Facts */}
+          <div className="rounded-2xl bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-gray-700 px-6 py-5 mb-10">
+            <h2 className="text-lg font-bold text-gray-900 dark:text-white mb-3">Key Facts About Area</h2>
+            <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+              <li><strong className="text-gray-800 dark:text-gray-200">The world&apos;s extremes:</strong> Vatican City is the world&apos;s smallest country at about 0.44 km² (44 hectares, or 109 acres). Russia is the largest at 17.1 million km² — over 38 billion acres, or about 1.8 times the size of Antarctica.</li>
+              <li><strong className="text-gray-800 dark:text-gray-200">The acre&apos;s origin:</strong> An acre was historically defined as the amount of land a yoke of oxen could plow in one day — roughly a strip 1 furlong (201 m) long and 1 chain (20.1 m) wide, which multiplies to 4,047 m² (close to the exact 4,046.86 m²).</li>
+              <li><strong className="text-gray-800 dark:text-gray-200">Sports field areas:</strong> An NBA basketball court is about 4,700 sq ft (437 m²). An American football field including end zones is roughly 1.32 acres (0.535 hectares). A FIFA regulation soccer pitch ranges from 0.62 to 0.82 acres.</li>
+              <li><strong className="text-gray-800 dark:text-gray-200">One square mile:</strong> Exactly 640 acres, 2.590 km², or 258.999 hectares. Many western US cities were planned on a 1-mile grid, making square-mile city blocks a common reference.</li>
+            </ul>
+          </div>
+
           <div className="pb-10"><FAQ questions={faqs} /></div>
           <div className="pb-6"><AdBanner slot="3333333333" /></div>
         </div>

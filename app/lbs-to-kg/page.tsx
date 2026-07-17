@@ -92,6 +92,53 @@ export default function LbsToKgPage() {
               </table>
             </div>
           </div>
+          {/* Formula Explained */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Why the Formula Works</h2>
+            <div className="space-y-3 text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+              <p>The formula kg = lbs × 0.453592 comes directly from the 1959 international definition of the avoirdupois pound as exactly 0.45359237 kilograms. This makes the conversion exact, not approximate. The commonly used 0.453592 rounds to 6 significant figures, introducing an error of less than 0.0001 grams per pound — negligible for any practical application.</p>
+              <p>A quick mental shortcut: divide pounds by 2.2. This gives results within 0.2% of the precise answer for most body weight values (150 lbs ÷ 2.2 = 68.18 kg, vs. exact 68.04 kg). For a closer estimate, divide by 2.205 instead, which is accurate to within 0.02%.</p>
+            </div>
+          </div>
+
+          {/* Worked Examples */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Real-World Examples</h2>
+            <div className="space-y-3 text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+              <p><strong className="text-gray-800 dark:text-gray-200">Clinical medication dosing:</strong> Drug doses in hospitals are calculated per kilogram of body weight. A 160 lb patient weighs 72.6 kg. Dosing at 15 mg/kg would require 72.6 × 15 = 1,089 mg. US healthcare providers must convert patient weights reported in pounds to kilograms for all clinical dosing calculations.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">International shipping:</strong> US domestic shipping uses pounds; international carriers and customs use kilograms. A 30 lb package = 13.6 kg. A 50 lb package = 22.7 kg. USPS customs forms require weight in kilograms for international shipments, even though domestic handling uses pounds.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">Combat sports weight classes:</strong> UFC, boxing, and wrestling weight classes are defined in pounds in the US but kilograms internationally. UFC lightweight is 155 lbs = 70.3 kg. UFC heavyweight is up to 265 lbs = 120.2 kg. International broadcasts and records use kilograms.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">Newborn and pediatric weights:</strong> Hospitals in the US record birth weights in pounds and ounces; international records use kilograms. An 8 lb 6 oz baby = 8.375 lbs = 3.80 kg. A 7 lb baby = 3.18 kg. Parents comparing their baby&apos;s weight to international growth charts need this conversion.</p>
+            </div>
+          </div>
+
+          {/* Body Weight Quick Reference */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Body Weight Quick Reference</h2>
+            <div className="overflow-hidden rounded-xl border border-gray-100 dark:border-gray-700">
+              <table className="w-full text-sm">
+                <thead><tr className="bg-gray-50 dark:bg-[#1e293b]">
+                  <th className="px-4 py-2.5 text-left font-semibold text-gray-600 dark:text-gray-300">Pounds</th>
+                  <th className="px-4 py-2.5 text-right font-semibold text-gray-600 dark:text-gray-300">Kilograms</th>
+                </tr></thead>
+                <tbody>
+                  {[[100,45.4],[120,54.4],[130,59.0],[140,63.5],[150,68.0],[160,72.6],[175,79.4],[185,83.9],[200,90.7],[220,99.8]].map(([lbs,kg],idx) => (
+                    <tr key={lbs} className={`border-t border-gray-50 dark:border-gray-800 ${idx % 2 === 0 ? 'bg-white dark:bg-[#0f172a]' : 'bg-gray-50/50 dark:bg-[#1e293b]/50'}`}>
+                      <td className="px-4 py-2.5 text-gray-700 dark:text-gray-300">{lbs} lbs</td>
+                      <td className="px-4 py-2.5 text-right font-mono text-gray-800 dark:text-gray-200">{kg} kg</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Why This Conversion Matters */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Why This Conversion Matters</h2>
+            <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Converting pounds to kilograms is essential for Americans working with international systems — including healthcare, science, shipping, and nutrition. Clinical settings worldwide use kilograms for all weight-based medication dosing; a US patient&apos;s pound-based weight must be converted before calculating drug doses, anesthesia, or chemotherapy. International nutrition guidelines and research studies always report weight in kilograms — anyone following a metric-based diet plan (protein per kg of body weight) needs this conversion. Online fitness communities, wearables, and apps may display weight in either unit depending on the user&apos;s region settings. Travelers carrying checked luggage from the US to metric countries need to know their bag&apos;s kilogram weight before reaching the airport. Scientists and engineers working in the US but publishing internationally must always convert to SI units.</p>
+          </div>
+
           <div className="pb-10"><FAQ questions={faqs} /></div>
           <div className="pb-4 text-sm text-gray-500 dark:text-gray-400">
             <p>For more weight conversions, see the full <a href="/weight" className="text-[#2563EB] hover:underline">Weight Converter</a>.</p>

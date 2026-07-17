@@ -95,6 +95,55 @@ export default function CelsiusToFahrenheitPage() {
               </table>
             </div>
           </div>
+          {/* Formula Explained */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Why the Formula Works</h2>
+            <div className="space-y-3 text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+              <p>The formula °F = (°C × 9/5) + 32 is the algebraic inverse of the Fahrenheit-to-Celsius formula. Multiplying by 9/5 (or 1.8) accounts for the different interval sizes between the two scales: there are 180 Fahrenheit degrees between water&apos;s freezing and boiling points but only 100 Celsius degrees, so each Celsius degree = 1.8 Fahrenheit degrees. Adding 32 then shifts the zero point to align with the Fahrenheit scale, where water freezes at 32°F rather than 0°F.</p>
+              <p>A widely used mental approximation: multiply Celsius by 2 and add 30. This is faster but less accurate. At 20°C: exact = 68°F, approximate = 70°F (close). At 0°C: exact = 32°F, approximate = 30°F (off by 2°). At 100°C: exact = 212°F, approximate = 230°F (off by 18°). Use this shortcut only for rough weather estimates; for cooking or medical temperatures, use the precise formula.</p>
+            </div>
+          </div>
+
+          {/* Worked Examples */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Real-World Examples</h2>
+            <div className="space-y-3 text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+              <p><strong className="text-gray-800 dark:text-gray-200">Weather temperatures:</strong> A European forecast of 25°C is a warm summer day = 77°F. A cold 5°C autumn day = 41°F (light jacket weather). A heatwave of 40°C = 104°F (dangerously hot). Freezing at 0°C = 32°F. A pleasant spring day of 15°C = 59°F.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">Oven temperatures for baking:</strong> European and most international recipes list oven temperatures in Celsius. 160°C = 320°F (slow bake). 180°C = 356°F (standard — set oven to 350°F). 200°C = 392°F (hot oven — set to 400°F). 220°C = 428°F (very hot, bread crust). 240°C = 464°F (pizza oven temperature).</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">Refrigerator and freezer settings:</strong> A refrigerator should be kept at 1–4°C = 33.8–39.2°F. Freezers should maintain −18°C = 0°F or below. European appliances display Celsius; if set with US expectations in mind, the wrong setting can lead to food safety issues.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">Medical and body temperature:</strong> 37°C = 98.6°F (normal). 38°C = 100.4°F (low fever). 39°C = 102.2°F (moderate fever). 40°C = 104°F (high fever, seek care). European hospitals and thermometers display Celsius; Americans need to know these Fahrenheit equivalents.</p>
+            </div>
+          </div>
+
+          {/* Temperature Quick Reference */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Common Temperature Quick Reference</h2>
+            <div className="overflow-hidden rounded-xl border border-gray-100 dark:border-gray-700">
+              <table className="w-full text-sm">
+                <thead><tr className="bg-gray-50 dark:bg-[#1e293b]">
+                  <th className="px-4 py-2.5 text-left font-semibold text-gray-600 dark:text-gray-300">Celsius</th>
+                  <th className="px-4 py-2.5 text-center font-semibold text-gray-600 dark:text-gray-300">Fahrenheit</th>
+                  <th className="px-4 py-2.5 text-right font-semibold text-gray-600 dark:text-gray-300">Context</th>
+                </tr></thead>
+                <tbody>
+                  {[[-20,-4,"Very cold winter"],[0,32,"Water freezes"],[10,50,"Cool day"],[15,59,"Spring weather"],[20,68,"Comfortable"],[25,77,"Warm summer"],[37,98.6,"Body temperature"],[40,104,"Heatwave / high fever"],[100,212,"Water boils"],[180,356,"Baking (≈350°F)"]].map(([c,f,ctx],idx) => (
+                    <tr key={String(c)} className={`border-t border-gray-50 dark:border-gray-800 ${idx % 2 === 0 ? 'bg-white dark:bg-[#0f172a]' : 'bg-gray-50/50 dark:bg-[#1e293b]/50'}`}>
+                      <td className="px-4 py-2.5 text-gray-700 dark:text-gray-300">{c}°C</td>
+                      <td className="px-4 py-2.5 text-center font-mono text-gray-800 dark:text-gray-200">{f}°F</td>
+                      <td className="px-4 py-2.5 text-right text-gray-500 dark:text-gray-400 text-xs">{ctx}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Why This Conversion Matters */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Why This Conversion Matters</h2>
+            <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Celsius to Fahrenheit is essential for anyone from a metric country living in or visiting the United States. The US is the only major country that uses Fahrenheit for everyday weather, appliance temperatures, and medical readings — which means every immigrant, expat, international student, and visitor must learn to interpret Fahrenheit from a Celsius baseline. American weather apps, TV forecasts, thermostats, ovens, and medical thermometers all display Fahrenheit. A European cooking a recipe on a US oven encounters Fahrenheit immediately. International medical records show Celsius; US healthcare providers need Fahrenheit equivalents. Anyone relocating to the US needs to internalize key Fahrenheit benchmarks — 32°F = freezing, 72°F = comfortable room, 98.6°F = healthy body, 350°F = baking — which requires converting from familiar Celsius references.</p>
+          </div>
+
           <div className="pb-10"><FAQ questions={faqs} /></div>
           <div className="pb-4 text-sm text-gray-500 dark:text-gray-400">
             <p>For all temperature conversions, see the full <a href="/temperature" className="text-[#2563EB] hover:underline">Temperature Converter</a>.</p>

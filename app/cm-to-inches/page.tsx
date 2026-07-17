@@ -92,6 +92,53 @@ export default function CmToInchesPage() {
               </table>
             </div>
           </div>
+          {/* Formula Explained */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Why the Formula Works</h2>
+            <div className="space-y-3 text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+              <p>The formula inches = cm ÷ 2.54 is simply the inverse of the standard inches-to-centimeters definition. Since 1959, one inch has been defined as exactly 2.54 centimeters, so 1 cm = 1/2.54 inches = 0.393701... inches. You can also multiply by 0.393701 instead of dividing by 2.54 — both methods give the same result. The decimal 0.39370078740157... is a non-terminating repeating decimal because 2.54 does not divide evenly into 1, but for practical purposes, 0.3937 introduces an error of less than 0.003%.</p>
+              <p>A common mental shortcut: 1 cm ≈ 0.4 inches (slightly overestimates). For a closer estimate, multiply by 0.39 — off by only 1%. For quick height estimation, divide centimeters by 30.48 (centimeters per foot) to get feet, or divide by 2.54 and then convert total inches to feet and inches by dividing by 12.</p>
+            </div>
+          </div>
+
+          {/* Worked Examples */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Real-World Examples</h2>
+            <div className="space-y-3 text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+              <p><strong className="text-gray-800 dark:text-gray-200">European clothing and shoe sizes:</strong> European shoe sizes reference inner foot length in millimeters. A EU size 42 corresponds to about 27 cm = 10.6 inches (US men&apos;s 9). A size 38 is about 24.3 cm = 9.6 inches (US women&apos;s 7.5). European jean waist sizes are in centimeters: size 82 cm = 32.3 inches.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">Apartment and room dimensions:</strong> European apartments list room dimensions in meters and centimeters. A 4.2 m × 3.6 m living room is 165 cm × 142 cm, or about 13.8 ft × 11.8 ft. An 80 m² apartment has about 861 sq ft — helpful for Americans comparing property abroad.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">Medical measurements:</strong> Wound sizes, tumor dimensions, and infant head circumference measurements are reported in centimeters internationally. A 5 cm wound is approximately 2 inches. Newborn head circumference of 34 cm ≈ 13.4 inches. US parents often want these converted to inches for intuitive understanding.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">Screen and display sizes:</strong> European retailers list TV screen sizes in centimeters: a &quot;140 cm TV&quot; is 55.1 inches diagonally. A 100 cm screen is 39.4 inches. Laptop screen sizes are listed in centimeters in some European catalogs but inches in the US.</p>
+            </div>
+          </div>
+
+          {/* Common Centimeter Heights Quick Reference */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Height Quick Reference</h2>
+            <div className="overflow-hidden rounded-xl border border-gray-100 dark:border-gray-700">
+              <table className="w-full text-sm">
+                <thead><tr className="bg-gray-50 dark:bg-[#1e293b]">
+                  <th className="px-4 py-2.5 text-left font-semibold text-gray-600 dark:text-gray-300">Centimeters</th>
+                  <th className="px-4 py-2.5 text-right font-semibold text-gray-600 dark:text-gray-300">Feet &amp; Inches</th>
+                </tr></thead>
+                <tbody>
+                  {[["152 cm","4′ 12″ (5′0″)"],["160 cm","5′ 3.0″"],["165 cm","5′ 5.0″"],["170 cm","5′ 6.9″"],["175 cm","5′ 8.9″"],["180 cm","5′ 10.9″"],["185 cm","6′ 0.9″"],["190 cm","6′ 2.8″"]].map(([cm,ft],idx) => (
+                    <tr key={cm} className={`border-t border-gray-50 dark:border-gray-800 ${idx % 2 === 0 ? 'bg-white dark:bg-[#0f172a]' : 'bg-gray-50/50 dark:bg-[#1e293b]/50'}`}>
+                      <td className="px-4 py-2.5 text-gray-700 dark:text-gray-300">{cm}</td>
+                      <td className="px-4 py-2.5 text-right font-mono text-gray-800 dark:text-gray-200">{ft}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Why This Conversion Matters */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Why This Conversion Matters</h2>
+            <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Converting centimeters to inches is essential for anyone navigating between metric and imperial measurement systems — which happens constantly in international shopping, travel, medical contexts, and professional work. Height is listed in centimeters on European, Asian, and most international documents; someone born in a metric country filling out a US form needs to convert. European clothing manufacturers list dimensions in centimeters; American buyers need inches. Medical records from most of the world use centimeters for height, wound size, and body measurements; US healthcare providers need to interpret these in familiar units. Architects, engineers, and product designers working across international standards frequently need centimeter measurements converted to inches to comply with US specifications or communicate with American clients.</p>
+          </div>
+
           <div className="pb-10"><FAQ questions={faqs} /></div>
           <div className="pb-4 text-sm text-gray-500 dark:text-gray-400">
             <p>For more length conversions, see the full <a href="/length" className="text-[#2563EB] hover:underline">Length Converter</a>.</p>

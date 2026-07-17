@@ -82,6 +82,28 @@ export default function CookingPage() {
       </section>
       <section className="bg-white dark:bg-[#0f172a] pt-6">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          {/* How It Works */}
+          <div className="mb-10">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">How Cooking Measurement Conversion Works</h2>
+            <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
+              <p>Cooking measurements present a unique challenge: the same ingredient can be measured by volume (cups, tablespoons) or by weight (grams, ounces), and converting between the two requires knowing the ingredient&apos;s density. A cup of water and a cup of flour weigh very differently — water is about 236 grams per cup, while flour ranges from 120 to 150 grams per cup depending on how it is scooped, sifted, or compacted. American and British home recipes typically measure by volume; European, professional, and precision baking recipes measure by weight.</p>
+              <p>Volume measurements vary by country even when using the same words. A US cup is 236.588 mL. A metric cup (used in Australia, Canada, and South Africa) is 250 mL — about 5.6% larger. A US tablespoon is 14.787 mL; a UK tablespoon is 15 mL; an Australian tablespoon is 20 mL — one-third larger than US. A US teaspoon is 4.929 mL; a metric teaspoon is 5 mL. These differences are small in savory cooking but can affect baking results significantly when multiplied across many uses.</p>
+              <p>Baking professionals almost never measure by volume because weight is consistent and reproducible. The density of flour varies with humidity, altitude, milling grade, and scooping technique. King Arthur Flour specifies 120 grams per cup (lightly spooned); other bakers use up to 150 grams. A 25% variance in the most important baking ingredient explains why some people struggle with volume-based recipes. A kitchen scale is the solution, and it requires knowing gram equivalents for all ingredients.</p>
+              <p>Cooking conversions are essential when following a recipe from a different country (a British recipe calling for 1 tablespoon = 15 mL vs. US 14.8 mL), scaling recipes up or down (multiplying by 3 is easier in grams than in fractions of cups), adapting recipes for different dietary requirements that specify precise ingredient weights, and using measuring tools calibrated in a different system than the recipe requires.</p>
+            </div>
+          </div>
+
+          {/* Key Facts */}
+          <div className="rounded-2xl bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-gray-700 px-6 py-5 mb-10">
+            <h2 className="text-lg font-bold text-gray-900 dark:text-white mb-3">Key Facts About Cooking Measurements</h2>
+            <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+              <li><strong className="text-gray-800 dark:text-gray-200">The Australian tablespoon problem:</strong> Australian tablespoons are 20 mL — one-third larger than the US tablespoon (14.8 mL) and a third larger than the metric tablespoon (15 mL). A recipe from Australia using &quot;2 tablespoons&quot; of baking powder would call for about 40 mL vs. 30 mL in a US recipe, a 33% difference that can significantly affect leavening.</li>
+              <li><strong className="text-gray-800 dark:text-gray-200">Water is the baseline:</strong> Water is exactly 1 gram per milliliter at room temperature, making it the universal reference for liquid cooking conversions. 1 US cup of water = 236.588 g. 1 metric cup = 250 g. 1 tablespoon of water = 14.787 g (US) or 15 g (metric).</li>
+              <li><strong className="text-gray-800 dark:text-gray-200">Pinch, dash, smidgen:</strong> A &quot;pinch&quot; is conventionally 1/16 teaspoon (about 0.3 mL). A &quot;dash&quot; is 1/8 teaspoon (about 0.6 mL). A &quot;smidgen&quot; is 1/32 teaspoon. These informal units vary by cook and are not standardized on any measuring spoon.</li>
+              <li><strong className="text-gray-800 dark:text-gray-200">FDA serving size:</strong> The FDA defines a standard serving of most condiments, sauces, and spreads as 2 tablespoons (about 30 mL) for US nutrition label purposes — the same amount used in most recipe dressing and sauce instructions.</li>
+            </ul>
+          </div>
+
           <div className="pb-10"><FAQ questions={faqs} /></div>
           <div className="pb-6"><AdBanner slot="3333333333" /></div>
         </div>

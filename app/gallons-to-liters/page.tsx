@@ -91,6 +91,32 @@ export default function GallonsToLitersPage() {
               </table>
             </div>
           </div>
+          {/* Formula Explained */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Why the Formula Works</h2>
+            <div className="space-y-3 text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+              <p>The formula liters = US gallons × 3.78541 comes from the historical definition of the US gallon as exactly 231 cubic inches. Since 1 cubic inch = 16.387064 mL (from the 1959 international inch definition), 1 US gallon = 231 × 16.387064 = 3,785.411784 mL = 3.785411784 liters. The US gallon derives from the Queen Anne wine gallon of 1707, standardized at 231 cubic inches. The rounded value 3.78541 is accurate to 6 significant figures.</p>
+              <p>The UK Imperial gallon is defined differently — as the volume of exactly 10 pounds of water at 62°F (16.7°C), which equals 4.54609 liters. This makes the Imperial gallon 20% larger than the US gallon. Always check which gallon a source means — a fuel economy rating of &quot;30 MPG&quot; in the US and &quot;30 MPG&quot; in the UK represent very different actual efficiencies.</p>
+            </div>
+          </div>
+
+          {/* Worked Examples */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Real-World Examples</h2>
+            <div className="space-y-3 text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+              <p><strong className="text-gray-800 dark:text-gray-200">Fuel pricing abroad:</strong> When driving in Europe or Canada, fuel is priced per liter. If gasoline costs $1.50/liter, multiply by 3.785 for the per-gallon equivalent: $5.68/gallon. Conversely, a US gas price of $3.50/gallon equals $0.92/liter — useful for travelers deciding whether to fill up before crossing a border.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">Aquariums and water tanks:</strong> A 20-gallon aquarium holds 75.7 liters. A 55-gallon tank holds 208 liters. Fish and aquatic plant care guides from European sources specify water volume in liters; US hobbyists need to know their gallon-sized tank&apos;s liter volume for dosing treatments and water changes.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">Gasoline cans and containers:</strong> A standard 5-gallon gasoline can = 18.9 liters. A 2.5-gallon can = 9.5 liters. In countries that sell fuel only in liters, knowing how many liters your can holds prevents overfilling or shortchanging.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">Home heating fuel:</strong> Propane and fuel oil for home heating are sold by the gallon in the US. A 500-gallon propane tank holds 1,893 liters — relevant when comparing heating systems or costs with metric-country sources that quote tank size and fuel prices in liters.</p>
+            </div>
+          </div>
+
+          {/* Why This Conversion Matters */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Why This Conversion Matters</h2>
+            <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Gallons to liters is essential for anyone buying fuel internationally, working with liquid volumes across metric and imperial systems, or comparing liquid product prices between countries. Every country outside the US sells fuel by the liter; travelers and expats must convert to understand fuel costs and compare prices. Imported beverages, cleaning products, and chemicals sold in liter containers must be converted for US consumers used to gallons and quarts. Cooking internationally involves liter-based measurements for stocks, broths, and large-batch recipes. Industrial and commercial liquid handling equipment from metric countries specifies tank and container volumes in liters; US purchasers need gallon equivalents to select appropriate storage. Water treatment chemicals, pool supplies, and agricultural inputs are often dosed per liter; US farmers and pool owners need to convert their gallon volumes.</p>
+          </div>
+
           <div className="pb-10"><FAQ questions={faqs} /></div>
           <div className="pb-4 text-sm text-gray-500 dark:text-gray-400">
             <p>For more volume conversions, see the full <a href="/volume" className="text-[#2563EB] hover:underline">Volume Converter</a>.</p>

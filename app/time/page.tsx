@@ -82,6 +82,28 @@ export default function TimePage() {
       </section>
       <section className="bg-white dark:bg-[#0f172a] pt-6">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          {/* How It Works */}
+          <div className="mb-10">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">How Time Conversion Works</h2>
+            <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
+              <p>Time is the one dimension that moves in only one direction, and converting between time units is fundamental to scheduling, science, engineering, and computing. The base SI unit of time is the second, defined since 1967 by the vibrations of cesium-133 atoms: exactly 9,192,631,770 oscillations per second. This definition is stable to within one second per 300 million years, making atomic clocks far more accurate than any astronomical observation.</p>
+              <p>A minute is 60 seconds, an hour is 60 minutes (3,600 seconds), a day is 24 hours (86,400 seconds). These groupings trace back to ancient Babylonian mathematics, which used a base-60 (sexagesimal) number system. The Babylonians chose 60 partly because it is divisible by 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, and 30 — more divisors than any smaller number — making fractions and subdivisions convenient without decimal notation.</p>
+              <p>Longer time units become less precise. A calendar year is 365 days, but Earth&apos;s actual orbital period (the tropical year) is approximately 365.2425 days. The Gregorian calendar accounts for this with leap years every four years, except century years not divisible by 400. For scientific calculations, a Julian year is standardized as exactly 365.25 days, which slightly overestimates the tropical year.</p>
+              <p>Time conversions are critical in computing (milliseconds and nanoseconds for processor cycles and network latency), physics (femtoseconds for laser pulses, light-travel-time for cosmic distances), finance (daily compound interest requires converting annual rates to per-second rates), and any global coordination across time zones where the same moment must be expressed in different local times.</p>
+            </div>
+          </div>
+
+          {/* Key Facts */}
+          <div className="rounded-2xl bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-gray-700 px-6 py-5 mb-10">
+            <h2 className="text-lg font-bold text-gray-900 dark:text-white mb-3">Key Facts About Time</h2>
+            <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+              <li><strong className="text-gray-800 dark:text-gray-200">Sunlight travel time:</strong> Light takes approximately 8 minutes 20 seconds to travel from the Sun to Earth (about 149.6 million km). A signal to a Mars rover can take 3 to 22 minutes depending on the planets&apos; orbital positions.</li>
+              <li><strong className="text-gray-800 dark:text-gray-200">Leap seconds:</strong> Earth&apos;s rotation is gradually slowing due to tidal friction from the Moon. Leap seconds are occasionally added to Coordinated Universal Time (UTC) to keep atomic clock time aligned with astronomical time — 27 have been added since 1972.</li>
+              <li><strong className="text-gray-800 dark:text-gray-200">CPU speeds:</strong> A 3 GHz processor completes one clock cycle in about 0.33 nanoseconds — one-third of a billionth of a second. Light travels about 10 centimeters (4 inches) in that time, which limits how physically large a processor can be.</li>
+              <li><strong className="text-gray-800 dark:text-gray-200">Age of the universe:</strong> The universe is approximately 13.8 billion years old, or roughly 4.35 × 10¹⁷ seconds — a number that illustrates why scientific notation exists.</li>
+            </ul>
+          </div>
+
           <div className="pb-10"><FAQ questions={faqs} /></div>
           <div className="pb-6"><AdBanner slot="3333333333" /></div>
         </div>

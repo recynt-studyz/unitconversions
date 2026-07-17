@@ -82,6 +82,28 @@ export default function DataPage() {
       </section>
       <section className="bg-white dark:bg-[#0f172a] pt-6">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          {/* How It Works */}
+          <div className="mb-10">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">How Digital Storage Conversion Works</h2>
+            <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
+              <p>Digital storage and data transfer are measured using units based on binary (base-2) mathematics. A bit is the smallest unit of digital data — a single 0 or 1, representing the two states of a transistor. Eight bits make one byte, which can represent 256 different values (2⁸). All files, messages, photos, videos, and programs are ultimately sequences of bits stored in memory or on disk.</p>
+              <p>A persistent source of confusion is the difference between decimal and binary prefixes. Hard drive manufacturers use decimal: 1 TB = 1,000,000,000,000 bytes. Operating systems use binary: 1 TiB (tebibyte) = 2⁴⁰ bytes = 1,099,511,627,776 bytes. This discrepancy is why a &quot;1 TB&quot; drive shows as about 931 GB in Windows or macOS — the OS uses binary measurement while reporting the label from the decimal-defined drive. The IEC introduced official binary prefixes (kibibyte, mebibyte, gibibyte, tebibyte) in 1998 to resolve this, but consumer products rarely use them.</p>
+              <p>Internet connection speeds are measured in bits per second, not bytes — and this is not an accident. Dividing by 8 converts from bits to bytes. A &quot;100 Mbps&quot; broadband connection downloads at a maximum of 12.5 megabytes per second (MB/s). This distinction between megabits (Mb) and megabytes (MB) is important when comparing advertised speeds to actual file download times.</p>
+              <p>Data storage conversions matter when comparing cloud storage plans, understanding why a drive shows less space than advertised, calculating how many photos or videos fit on a memory card, estimating file transfer times, planning server storage for backup systems, or understanding the difference between download speed (bits) and file size (bytes).</p>
+            </div>
+          </div>
+
+          {/* Key Facts */}
+          <div className="rounded-2xl bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-gray-700 px-6 py-5 mb-10">
+            <h2 className="text-lg font-bold text-gray-900 dark:text-white mb-3">Key Facts About Digital Storage</h2>
+            <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+              <li><strong className="text-gray-800 dark:text-gray-200">Human genome size:</strong> The complete human genome contains approximately 3.2 billion base pairs, which can be stored in roughly 725 MB of compressed data — about the size of a CD.</li>
+              <li><strong className="text-gray-800 dark:text-gray-200">Netflix daily traffic:</strong> Netflix streams an estimated 15 petabytes (15,000 terabytes) of data per day globally. The entire printed collection of the Library of Congress is estimated at approximately 10 terabytes of text.</li>
+              <li><strong className="text-gray-800 dark:text-gray-200">The 5% gap:</strong> A megabyte is 1,048,576 bytes (binary) but often marketed as 1,000,000 bytes (decimal) — a 4.86% difference. At terabyte scale, this gap grows: 1 TB (decimal) = 0.909 TiB (binary), explaining the &quot;missing&quot; storage on new drives.</li>
+              <li><strong className="text-gray-800 dark:text-gray-200">Research speeds:</strong> Laboratory fiber optic transmission speeds have exceeded 1 petabit per second (1,000 terabits/s) — enough to transmit the entire internet&apos;s traffic in a fraction of a second.</li>
+            </ul>
+          </div>
+
           <div className="pb-10"><FAQ questions={faqs} /></div>
           <div className="pb-6"><AdBanner slot="3333333333" /></div>
         </div>

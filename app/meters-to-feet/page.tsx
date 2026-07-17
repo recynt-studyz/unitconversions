@@ -91,6 +91,52 @@ export default function MetersToFeetPage() {
               </table>
             </div>
           </div>
+          {/* Formula Explained */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Why the Formula Works</h2>
+            <div className="space-y-3 text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+              <p>The formula feet = meters × 3.28084 is derived from the exact definition: 1 foot = 0.3048 meters exactly, so 1 meter = 1/0.3048 = 3.28083989501... feet. The value 3.28084 rounds to 6 significant figures — accurate to within 0.0001% for any practical measurement. For rough mental estimates, multiply by 3.3 (overestimates by 0.58%) or simply round to &quot;about 3.3 feet per meter.&quot; To convert meters to feet and inches, multiply by 3.28084 to get total feet, then take the decimal fraction and multiply by 12 to get inches.</p>
+            </div>
+          </div>
+
+          {/* Worked Examples */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Real-World Examples</h2>
+            <div className="space-y-3 text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+              <p><strong className="text-gray-800 dark:text-gray-200">International athlete heights:</strong> Sports records from Europe and international competitions list heights in meters. Shaquille O&apos;Neal is 2.16 m = 7 ft 1 in. Lionel Messi is 1.70 m = 5 ft 7 in. Michael Jordan is 1.98 m = 6 ft 6 in. Following international sports requires converting metric heights to understand scale.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">Mountain elevations:</strong> Mont Blanc (highest Alpine peak) is 4,808 m = 15,774 ft. The Matterhorn is 4,478 m = 14,692 ft. American hikers comparing these to Rocky Mountain peaks (like Pikes Peak at 14,115 ft = 4,302 m) need to convert to make meaningful comparisons.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">European apartment listings:</strong> A room listed as &quot;3 m × 4.5 m&quot; is 9.84 ft × 14.76 ft (about 10 ft × 15 ft). A ceiling height of 2.7 m = 8.86 ft (nearly 9 feet). US buyers evaluating foreign properties need these dimensions in feet for intuitive spatial understanding.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">Water depth and scuba diving:</strong> Recreational scuba diving limits are typically 40 m = 131 ft. Advanced dives may reach 60 m = 197 ft. Freediving records exceed 200 m = 656 ft. Dive tables and computers in metric countries display meters; US divers may need feet for comparison.</p>
+            </div>
+          </div>
+
+          {/* Meters to Feet Quick Reference */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Common Values Quick Reference</h2>
+            <div className="overflow-hidden rounded-xl border border-gray-100 dark:border-gray-700">
+              <table className="w-full text-sm">
+                <thead><tr className="bg-gray-50 dark:bg-[#1e293b]">
+                  <th className="px-4 py-2.5 text-left font-semibold text-gray-600 dark:text-gray-300">Meters</th>
+                  <th className="px-4 py-2.5 text-right font-semibold text-gray-600 dark:text-gray-300">Feet</th>
+                </tr></thead>
+                <tbody>
+                  {[[1.5,"4.92 ft (4′11″)"],[1.7,"5.58 ft (5′7″)"],[1.8,"5.91 ft (5′11″)"],[2,"6.56 ft (6′7″)"],[2.5,"8.20 ft"],[3,"9.84 ft"],[5,"16.40 ft"],[10,"32.81 ft"],[100,"328.08 ft"],[1000,"3,280.8 ft"]].map(([m,ft],idx) => (
+                    <tr key={String(m)} className={`border-t border-gray-50 dark:border-gray-800 ${idx % 2 === 0 ? 'bg-white dark:bg-[#0f172a]' : 'bg-gray-50/50 dark:bg-[#1e293b]/50'}`}>
+                      <td className="px-4 py-2.5 text-gray-700 dark:text-gray-300">{m} m</td>
+                      <td className="px-4 py-2.5 text-right font-mono text-gray-800 dark:text-gray-200">{ft}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Why This Conversion Matters */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Why This Conversion Matters</h2>
+            <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Meters-to-feet conversion is essential whenever metric measurements must be understood in a US context. Building dimensions in metric countries use meters; real estate listings, architectural plans, and engineering specs from Europe, Asia, and Australia must be converted to feet for American buyers, contractors, and colleagues. Mountain elevations worldwide are listed in meters in scientific databases, geographic references, and international media; American readers need feet to contextualize altitude against familiar peaks. International sports records and athlete statistics use metric — height in centimeters, jump height in meters, swimming distances in meters. Geographic terrain data, weather balloon measurements, and oceanographic depth data are all in meters; US aviation, meteorology, and marine applications must convert these constantly. Global sea level rise projections and climate data are published in centimeters and meters; journalists and communicators need feet and inches for American audiences.</p>
+          </div>
+
           <div className="pb-10"><FAQ questions={faqs} /></div>
           <div className="pb-4 text-sm text-gray-500 dark:text-gray-400">
             <p>For more length conversions, see the full <a href="/length" className="text-[#2563EB] hover:underline">Length Converter</a>.</p>

@@ -91,6 +91,31 @@ export default function KmToMilesPage() {
               </table>
             </div>
           </div>
+          {/* Formula Explained */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Why the Formula Works</h2>
+            <div className="space-y-3 text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+              <p>The formula miles = km × 0.621371 is the direct inverse of the miles-to-kilometers definition. Since 1 mile = 1.609344 km exactly, 1 km = 1/1.609344 miles = 0.621371192... miles. The value 0.621371 rounds to 6 significant figures. A quick mental shortcut: multiply km by 0.6 (underestimates by 3.6%), or divide by 1.6 (overestimates by 0.6%). The &quot;multiply by 5 and divide by 8&quot; trick gives exactly 0.625, which overestimates by about 0.6% — close enough for rough navigation.</p>
+            </div>
+          </div>
+
+          {/* Worked Examples */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Real-World Examples</h2>
+            <div className="space-y-3 text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+              <p><strong className="text-gray-800 dark:text-gray-200">International speed limits:</strong> Canada&apos;s 100 km/h highway limit = 62.1 mph. France and Germany&apos;s common 130 km/h motorway limit = 80.8 mph. Urban 50 km/h limits = 31.1 mph. Knowing these equivalents helps US drivers adapt quickly when driving in metric countries.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">Running and cycling events:</strong> The Tour de France covers roughly 3,500 km = 2,175 miles over three weeks. A stage of 200 km = 124 miles. A 5 km park run = 3.11 miles. A 42.195 km marathon = 26.22 miles. International race coverage often reports distances in km while American commentators prefer miles.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">European road trips:</strong> London to Paris by train: about 450 km = 280 miles. Rome to Milan: 570 km = 354 miles. Berlin to Munich: 590 km = 367 miles. Hiring a car in Europe, fuel costs and tolls are calculated by the kilometer.</p>
+              <p><strong className="text-gray-800 dark:text-gray-200">Vehicle range and specs:</strong> A European EV rated at 600 km of range delivers approximately 373 miles on a charge. A German car&apos;s top speed of 250 km/h = 155.3 mph. Engine specs and service intervals (often every 15,000 km = 9,321 miles) are listed in km for non-US market vehicles.</p>
+            </div>
+          </div>
+
+          {/* Why This Conversion Matters */}
+          <div className="mb-8">
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Why This Conversion Matters</h2>
+            <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">Converting kilometers to miles is indispensable for Americans reading international content — travel itineraries, car reviews, athletic competition coverage, or geographic distance references — where metric is the standard. International news articles frequently cite distances in kilometers; American readers need these in miles for intuitive understanding (a 500 km journey sounds abstract; 310 miles is graspable). GPS units in rental cars abroad default to km; cross-border driving on a US-configured phone suddenly shows km that must be mentally converted. Car specifications from European, Japanese, and Korean manufacturers list top speed and range in km. Trail and hiking distances in national parks and wilderness areas outside the US are always in km. Satellite imagery services, geographic databases, and scientific literature universally use km for distance measurement.</p>
+          </div>
+
           <div className="pb-10"><FAQ questions={faqs} /></div>
           <div className="pb-4 text-sm text-gray-500 dark:text-gray-400">
             <p>For more length conversions, see the full <a href="/length" className="text-[#2563EB] hover:underline">Length Converter</a>.</p>

@@ -82,6 +82,28 @@ export default function FuelPage() {
       </section>
       <section className="bg-white dark:bg-[#0f172a] pt-6">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          {/* How It Works */}
+          <div className="mb-10">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">How Fuel Economy Conversion Works</h2>
+            <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
+              <p>Fuel economy measures how efficiently a vehicle converts fuel into distance. Two fundamentally different approaches exist: the United States uses miles per gallon (MPG) — a higher number means better efficiency. Most of the world uses liters per 100 kilometers (L/100km) — a lower number means better efficiency. These are inverse (reciprocal) measures, so comparing them requires a formula, not simple multiplication.</p>
+              <p>The relationship between MPG and L/100km is not linear, which creates a common misconception. Improving from 20 MPG to 25 MPG saves more fuel over the same distance than improving from 40 MPG to 50 MPG. In L/100km terms this is clear: 20 MPG ≈ 11.76 L/100km; 25 MPG ≈ 9.41 L/100km (saving 2.35 L per 100km). Meanwhile, 40 MPG ≈ 5.88 and 50 MPG ≈ 4.70 (saving only 1.18 L per 100km). The L/100km system makes these tradeoffs visible; the MPG system obscures them.</p>
+              <p>UK Imperial MPG uses the Imperial gallon (4.546 liters), which is 20% larger than the US gallon (3.785 liters). A car rated at 40 UK MPG achieves only about 33 US MPG — the same distance, but measured against a larger gallon. When reading reviews of cars sold in both markets, always check which gallon standard applies. European reviews of UK cars often show both UK MPG and L/100km; American reviews show only US MPG.</p>
+              <p>Electric vehicles are rated in different units: the US uses MPGe (miles per gallon equivalent) or kWh/100mi, while most other countries use kWh/100km. The EPA defines 1 MPGe as the efficiency equivalent of a car achieving 1 US MPG on gasoline, where 33.7 kWh equals the energy content of 1 US gallon. A Tesla Model 3 rated at 134 MPGe uses approximately 25 kWh per 100 miles, or about 15.5 kWh per 100 km.</p>
+            </div>
+          </div>
+
+          {/* Key Facts */}
+          <div className="rounded-2xl bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-gray-700 px-6 py-5 mb-10">
+            <h2 className="text-lg font-bold text-gray-900 dark:text-white mb-3">Key Facts About Fuel Economy</h2>
+            <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+              <li><strong className="text-gray-800 dark:text-gray-200">The conversion constant:</strong> The formula for US MPG to L/100km is: L/100km = 235.214 ÷ MPG. The constant 235.214 comes from converting 100 miles to km (160.934 km) and multiplying by the liters per gallon (3.785 L/gal): 100 × 3.785 ÷ 1.609 = 235.2.</li>
+              <li><strong className="text-gray-800 dark:text-gray-200">Aviation efficiency:</strong> Modern wide-body jets achieve 30–35 passenger-km per liter of jet fuel — roughly equivalent to a fuel-efficient car carrying one person, but at 900 km/h and 35,000 feet.</li>
+              <li><strong className="text-gray-800 dark:text-gray-200">The two gallons problem:</strong> A car achieving &quot;30 MPG&quot; in UK advertising gets only about 25 US MPG. The Imperial gallon is 1.201 times larger than the US gallon, so all direct MPG comparisons between UK and US vehicles require this adjustment.</li>
+              <li><strong className="text-gray-800 dark:text-gray-200">Energy content of gasoline:</strong> One US gallon of gasoline contains about 33.7 kWh of chemical energy. An internal combustion engine converts roughly 25% to motion; an electric motor converts about 90%, explaining most of the fuel economy difference between ICE and EV vehicles.</li>
+            </ul>
+          </div>
+
           <div className="pb-10"><FAQ questions={faqs} /></div>
           <div className="pb-6"><AdBanner slot="3333333333" /></div>
         </div>

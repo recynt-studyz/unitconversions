@@ -82,6 +82,28 @@ export default function FrequencyPage() {
       </section>
       <section className="bg-white dark:bg-[#0f172a] pt-6">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          {/* How It Works */}
+          <div className="mb-10">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">How Frequency Conversion Works</h2>
+            <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
+              <p>Frequency measures how many complete cycles of a repeating event occur per second. The SI unit is the hertz (Hz), named after physicist Heinrich Hertz, who first experimentally demonstrated the existence of electromagnetic waves in 1888. One hertz equals one cycle per second. Frequency is fundamental to audio engineering, radio communications, electrical power systems, computing, and physics.</p>
+              <p>Human hearing spans approximately 20 Hz to 20,000 Hz (20 kHz), though this range narrows with age — most adults over 40 cannot clearly hear above 15 kHz. Musical instruments produce complex waveforms combining many frequencies simultaneously. The international tuning standard sets middle A (A4) at exactly 440 Hz. Bass frequencies below 250 Hz give music depth; midrange (250 Hz–4 kHz) carries voice intelligibility; high frequencies above 4 kHz provide brightness and air.</p>
+              <p>Radio waves span an enormous range. AM radio broadcasts between 530 kHz and 1,700 kHz; FM radio between 87.5 MHz and 108 MHz; cellular networks operate from 700 MHz to 39 GHz (for 5G mmWave). Wi-Fi operates at 2.4 GHz and 5 GHz bands. Computer CPUs are measured in GHz — a 3 GHz processor completes 3 billion clock cycles per second, with each cycle taking 0.33 nanoseconds.</p>
+              <p>Frequency conversions are needed when working with radio equipment, tuning instruments, designing audio systems, evaluating processor performance, analyzing electrical grid specifications (60 Hz in North America, 50 Hz in Europe — a difference that affects motor speed and affects which appliances work internationally without adapters), and in scientific instruments like mass spectrometers and NMR machines.</p>
+            </div>
+          </div>
+
+          {/* Key Facts */}
+          <div className="rounded-2xl bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-gray-700 px-6 py-5 mb-10">
+            <h2 className="text-lg font-bold text-gray-900 dark:text-white mb-3">Key Facts About Frequency</h2>
+            <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+              <li><strong className="text-gray-800 dark:text-gray-200">Infrasound and ultrasound:</strong> Below 20 Hz lies infrasound, inaudible but perceptible as vibration, produced by earthquakes, wind turbines, and some large animals (elephants use infrasound for long-range communication). Above 20 kHz is ultrasound, used in medical imaging, sonar, and distance sensors.</li>
+              <li><strong className="text-gray-800 dark:text-gray-200">The cesium clock:</strong> The second is defined by the cesium-133 atom, which oscillates at exactly 9,192,631,770 Hz. Atomic clocks using this frequency drift less than one second in 300 million years — far more stable than Earth&apos;s rotation.</li>
+              <li><strong className="text-gray-800 dark:text-gray-200">Visible light frequencies:</strong> Visible light is electromagnetic radiation from about 430 THz (red) to 750 THz (violet) — in the trillions of hertz. These frequencies are so high that wavelength (nanometers) is more practical than frequency for everyday optical work.</li>
+              <li><strong className="text-gray-800 dark:text-gray-200">Power grid difference:</strong> North America uses 60 Hz AC power; Europe, Asia, and most of the world use 50 Hz. This makes some appliances incompatible across regions without voltage and frequency converters — electric motors run at different speeds, and quartz clock mechanisms may gain or lose time.</li>
+            </ul>
+          </div>
+
           <div className="pb-10"><FAQ questions={faqs} /></div>
           <div className="pb-6"><AdBanner slot="3333333333" /></div>
         </div>

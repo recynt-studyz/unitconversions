@@ -82,6 +82,28 @@ export default function PressurePage() {
       </section>
       <section className="bg-white dark:bg-[#0f172a] pt-6">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          {/* How It Works */}
+          <div className="mb-10">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">How Pressure Conversion Works</h2>
+            <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
+              <p>Pressure is force applied per unit area. The SI unit is the pascal (Pa), named after mathematician Blaise Pascal, and equals one newton of force per square meter. Since a pascal is a very small amount of pressure — about the weight of a dollar bill resting on a square meter of surface — practical applications use kilopascals (kPa), megapascals (MPa), bar, or atmospheres.</p>
+              <p>Standard atmospheric pressure at sea level is defined as exactly 1 atmosphere (atm) = 101,325 pascals ≈ 14.696 PSI ≈ 1.01325 bar. This is the pressure exerted by the entire column of air above a point at sea level. Atmospheric pressure decreases with altitude — at the peak of Everest (8,849 m), the pressure is roughly one-third of sea level, which is why climbers need supplemental oxygen: there are fewer oxygen molecules per breath even at the same fraction of atmospheric composition.</p>
+              <p>Different industries use different pressure units by convention. PSI (pounds per square inch) dominates in the United States for tire pressure, hydraulic equipment, and industrial systems. Bar is common in Europe for the same purposes. Blood pressure is measured in mmHg (millimeters of mercury) worldwide — a historical holdover from when mercury manometers were the standard measuring device. Weather forecasts use millibars (mbar) or hectopascals (hPa), which are numerically identical: 1 mbar = 1 hPa = 100 Pa.</p>
+              <p>Pressure conversions are needed when inflating tires with a gauge calibrated in different units, reading weather maps from international sources, understanding scuba diving depth limits (every 10 meters of seawater adds roughly 1 atmosphere of pressure), interpreting medical blood pressure readings when comparing systems, and specifying boiler, pipeline, or compressor operating pressures across international engineering standards.</p>
+            </div>
+          </div>
+
+          {/* Key Facts */}
+          <div className="rounded-2xl bg-gray-50 dark:bg-[#1e293b] border border-gray-100 dark:border-gray-700 px-6 py-5 mb-10">
+            <h2 className="text-lg font-bold text-gray-900 dark:text-white mb-3">Key Facts About Pressure</h2>
+            <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+              <li><strong className="text-gray-800 dark:text-gray-200">Ocean deep pressure:</strong> The Challenger Deep in the Mariana Trench (≈10,935 m) has a pressure of about 1,100 atm (16,000 PSI, or 110 MPa) — enough to crush most submarines and compress water measurably.</li>
+              <li><strong className="text-gray-800 dark:text-gray-200">Tire pressure range:</strong> A typical car tire is inflated to 30–35 PSI (2.1–2.4 bar). Bicycle tires range from 30 PSI for mountain bikes to 130 PSI for road racing — the same narrow tire width at low pressure would cause pinch flats and poor handling.</li>
+              <li><strong className="text-gray-800 dark:text-gray-200">Blood pressure units:</strong> The 120/80 mmHg standard comes from mercury manometers where 120 mmHg means the heart creates enough pressure to push mercury 120 mm up a column. 1 mmHg = 133.322 Pa.</li>
+              <li><strong className="text-gray-800 dark:text-gray-200">Mercury column:</strong> Standard atmospheric pressure supports a mercury column exactly 760 mm tall — which is why 760 mmHg = 1 atm and why early barometers used 1-meter mercury tubes.</li>
+            </ul>
+          </div>
+
           <div className="pb-10"><FAQ questions={faqs} /></div>
           <div className="pb-6"><AdBanner slot="3333333333" /></div>
         </div>
